@@ -8,4 +8,4 @@ Usage:
 ```ts
 import { dye } from 'dye';
 
-console.log(dye`${'red'}This is red ${'reset'}and ${this is ${'blue'}`);
+console.log(dye`${'red'}This is red ${'reset'}and ${'blue'}This is blue`);

@@ -19,7 +19,7 @@ type Primitive = string | number | boolean | bigint | symbol | null | undefined;
 export const dye = (
 	strings: TemplateStringsArray,
 	...args: (ColorMarker | Primitive | Record<PropertyKey, unknown>)[]
-) =>
+): string =>
 	args.length
 		? strings.reduce(
 				(prev, cur, i) =>
