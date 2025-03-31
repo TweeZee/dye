@@ -1,0 +1,30 @@
+{
+  "name": "@tweezee/dye",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./index.ts",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "publish": "bunx jsr publish"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "yoctocolors": "^2.1.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "printWidth": 100,
+    "bracketSameLine": true,
+    "arrowParens": "always",
+    "useTabs": true
+  }
+}
