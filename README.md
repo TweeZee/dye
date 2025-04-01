@@ -9,3 +9,8 @@ Usage:
 import { dye } from 'dye';
 
 console.log(dye`${'red'}This is red ${'reset'}and ${'blue'}This is blue`);
+
+```
+
+Get it on:
+- [jsr](https://jsr.io/@tweezee/dye)
