@@ -57,7 +57,7 @@ const colorMarkers = new Map<ColorMarker, number>(colorTuples);
  * <span style="color: green">Green numbers: \${420} </span> \${"reset"} And this is back to normal.
  * \${arbitraryValue} can be included as well.\`
  * @param strings an array of all the substrings that come before, after and between args, in order
- * @param args can be either numbers, arbitrary strings or {@link ColorMarker}, marking the start of coloration.
+ * @param args mixed array of either arbitrary values or {@link ColorMarker}, marking the start of coloration.
  */
 export const dye = (
 	strings: TemplateStringsArray,
@@ -69,7 +69,7 @@ export const dye = (
 					i - 1 < 0
 						? prev + cur
 						: !!colorMarkers.keys().find((key) => key === args[i - 1])
-							? prev + `\x1b[${args[i - 1] as string}` + cur
+							? prev + `\x1b[${colorMarkers.get(args[i - 1] as ColorMarker)}m` + cur
 							: prev +
 								(typeof args[i - 1] === 'object'
 									? JSON.stringify(args[i - 1], null, 2)
