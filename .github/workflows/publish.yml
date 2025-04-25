@@ -24,4 +24,4 @@ jobs:
         run: bun install
 
       - name: Publish package
-        run: npx jsr publish
+        run: bunx jsr publish

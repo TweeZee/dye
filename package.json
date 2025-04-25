@@ -1,6 +1,6 @@
 {
   "name": "@tweezee/dye",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "exports": "./index.ts",
   "module": "index.ts",
@@ -13,9 +13,6 @@
   },
   "peerDependencies": {
     "typescript": "^5"
-  },
-  "dependencies": {
-    "yoctocolors": "^2.1.1"
   },
   "prettier": {
     "singleQuote": true,

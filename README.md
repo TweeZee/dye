@@ -2,7 +2,7 @@
 
 Dead-Simple, super-smol Template Literal Function for Colorful Console Output
 
-Uses [yoctocolors](https://github.com/sindresorhus/yoctocolors) under the hood.
+~~Uses [yoctocolors](https://github.com/sindresorhus/yoctocolors) under the hood.~~ Now dependency-free!
 
 Usage:
 ```ts
